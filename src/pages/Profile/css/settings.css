@@ -1,0 +1,104 @@
+.profile-main-container {
+  margin: 30px;
+  padding: 30px 40px;
+  border-radius: 12px;
+  background: #FFF;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.05);
+}
+
+.profile-navigation {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.profile-navigation-btn {
+  background: none;
+  border: none;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 20px;
+  color: #717B8C;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.profile-navigation-btn.active {
+  color: #06F;
+  font-weight: 700;
+  border-bottom: 2px solid #1A75FF;
+  cursor: default;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-photo-box {
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 2px solid #E0E4EC;
+}
+
+.profile-photo-label {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+  color: #4C535F;
+  margin-bottom: 15px;
+}
+
+.profile-data-box {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.profile-btn-box {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.profile-btn-submit {
+  background: #06F;
+  color: #FFF;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-right: 25px;
+}
+
+.profile-msg {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.profile-msg-success {
+  color: #ffffff;
+  background-color: #5fa95d;
+  padding: 15px 10px;
+  border-radius: 10px;
+  border: 2px solid #5fa95d;
+}
+
+.profile-msg-error {
+  color: #ffffff;
+  background-color: #F13D3D;
+  padding: 15px 10px;
+  border-radius: 10px;
+  border: 2px solid #F13D3D;
+}
+
+.profile-input-label {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}

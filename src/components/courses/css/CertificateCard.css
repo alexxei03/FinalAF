@@ -1,0 +1,64 @@
+.certificate-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease-in-out;
+}
+
+.certificate-card:hover {
+    transform: translateY(-5px);
+}
+
+.certificate-info {
+    margin-bottom: 15px;
+}
+
+.certificate-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.certificate-date {
+    color: #666;
+    font-size: 14px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.certificate-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.certificate-button {
+    background-color: #06F;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+}
+
+.certificate-button:hover {
+    background-color: #0056b3;
+}
+
+.open-btn {
+    background-color: #28a745;
+}
+
+.open-btn:hover {
+    background-color: #218838;
+}

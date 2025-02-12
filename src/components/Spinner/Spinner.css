@@ -1,0 +1,61 @@
+.loading_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 200ms ease-out, visibility 200ms ease-out;
+}
+
+.loading_overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.loading_overlay.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.spinner_container {
+  --size: 45px;
+  --color: #0075ff;
+  --speed: 1.75s;
+  position: relative;
+  height: var(--size);
+  width: var(--size);
+}
+
+.spinner_container::before,
+.spinner_container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: var(--color);
+  animation: pulse var(--speed) ease-in-out infinite;
+  transform: scale(0);
+}
+
+.spinner_container::after {
+  animation-delay: calc(var(--speed) / -2);
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 0.25;
+  }
+}

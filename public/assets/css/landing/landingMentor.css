@@ -1,0 +1,372 @@
+.mentorPage {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F5F9FF;
+
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+        position: relative;
+    }
+
+    .centered-content {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sct1-h1 {
+        margin-top: clamp(15px, 2vw, 70px);
+        margin-bottom: clamp(5px, 2vw, 25px);
+        font-size: clamp(18px, 2vw, 36px);
+        color: #101828;
+        text-align: center;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .sct1 {
+        padding-top: clamp(105px, 2vw, 150px);
+    }
+
+    .two-columns {
+        display: flex;
+        border-radius: 8px;
+        border: 2px solid #E5E7E8;
+        background: #FFF;
+        padding: clamp(8px, 2vw, 30px) clamp(8px, 2vw, 30px);
+    }
+
+    .column {
+        flex: 1;
+        padding: 20px;
+    }
+
+    .column-img {
+        border-radius: 5px;
+        object-fit: cover;
+        max-width: 100%;
+        max-height: clamp(238px, 40vw, 500px);
+        height: auto;
+        pointer-events: none;
+    }
+
+    @media (max-width: 768px) {
+        .two-columns {
+            flex-direction: column-reverse;
+        }
+    }
+
+
+    .sct1-h2 {
+        color: #101828;
+        font-family: Rubik;
+        font-size: clamp(16px, 2vw, 21px);
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .stc1-h3 {
+        color: #636363;
+        font-family: Inter;
+        font-size: clamp(13px, 2vw, 16px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: clamp(19px, 2vw, 24px);
+    }
+
+    .list-elem {
+        display: flex;
+        margin-bottom: 5px;
+    }
+
+    .circle {
+        margin-top: 2px;
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+        border-radius: 9px;
+        background: #2655FF;
+
+        margin-right: 8px;
+    }
+
+    .tutor-h1 {
+        margin-top: 16px;
+        margin-bottom: 5px;
+
+        color: #000;
+        font-family: Rubik;
+        font-size: clamp(15px, 2vw, 18px);
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .tutor-nav {
+        display: flex;
+        align-items: end;
+    }
+
+    .tutor-steps {
+        display: flex;
+        width: 220px;
+        height: 46px;
+        flex-shrink: 0;
+        border-radius: 10px 10px 0px 0px;
+        border: 1px solid #ECEDEE;
+        background: #F9FAFB;
+    }
+
+    .tutor-step {
+        cursor: pointer;
+        color: #FFF;
+        text-align: center;
+        font-family: Rubik;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        width: 45px;
+        height: 46px;
+        border: 1px solid #ECEDEE;
+        background: #FFB547;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tutor-step.active {
+        cursor: default;
+        color: #FFB547;
+        border: 1px solid #ECEDEE;
+        background-color: #FFF;
+        ;
+    }
+
+    .first-step {
+        border-radius: 10px 0px 0px 0px;
+    }
+
+    .tutor-btn {
+        height: 45px;
+        color: #FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px;
+
+        margin-left: 10px;
+        padding: 0px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 8px 8px 0px 0px;
+        border: 1px solid #ECEDEE;
+        background: #FFB547;
+        box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    }
+
+    .underlined {
+        text-decoration-line: underline;
+    }
+
+    .yellow {
+        color: #FFB547;
+    }
+
+    .tutor-info {
+        border-radius: 0px 10px 10px 10px;
+        border: 1px solid #ECEDEE;
+        background: #F9FAFB;
+        padding: 15px 15px;
+
+        color: #000;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+
+    /* section 2 */
+
+    .sct2-columns {
+        display: flex;
+        margin-bottom: 73px;
+    }
+
+    .column1 {
+        flex: 55%;
+    }
+
+    .column2 {
+        flex: 45%;
+    }
+
+    .sct2-h1 {
+        margin-top: clamp(15px, 2vw, 65px);
+        margin-bottom: clamp(35px, 3vw, 80px);
+        font-size: clamp(20px, 2vw, 40px);
+        color: var(--text-gray-900, #18191F);
+        text-align: center;
+        font-feature-settings: 'salt' on, 'liga' off;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 64px;
+    }
+
+    .sct2-elems {
+        position: relative;
+        z-index: 1;
+    }
+
+    .sct2-el1 svg {
+        width: clamp(13px, 2vw, 24px);
+    }
+
+    .sct2-el2 svg {
+        width: clamp(15px, 2vw, 24px);
+    }
+
+    .sct2-el {
+        display: flex;
+        padding: 24px 16px;
+        cursor: pointer;
+
+        background: #FFF;
+        box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.05);
+    }
+
+    .sct2-el.active {
+        cursor: default;
+        background: #F5F9FF;
+        box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.05);
+    }
+
+    .sct2-el.active .sct2-el1 svg circle {
+        fill: #2655FF;
+    }
+
+    .sct2-el.active .sct2-el2 svg path {
+        stroke: #2655FF;
+    }
+
+
+    .el-text {
+        max-width: 520px;
+
+        color: #000;
+        font-family: Inter;
+        font-size: clamp(13px, 2vw, 16px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: clamp(19px, 2vw, 24px);
+    }
+
+    .sct2-el1 svg {
+        width: clamp(13px, 2vw, 24px);
+    }
+
+    .sct4-el2 svg {
+        width: clamp(15px, 2vw, 24px);
+    }
+
+    .sct2-el1 {
+        margin-right: 16px;
+    }
+
+    .sct2-el2 {
+        margin-left: auto;
+        align-self: center;
+    }
+
+    .col2-h1 {
+        color: var(--text-gray-900, #18191F);
+        font-feature-settings: 'salt' on, 'liga' off;
+
+        font-family: Inter;
+        font-size: clamp(14px, 2vw, 18px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: clamp(18px, 2vw, 28px);
+
+        margin-bottom: clamp(15px, 2vw, 40px);
+    }
+
+    .col2-h2 {
+        color: #000;
+        font-family: Inter;
+        font-size: clamp(13px, 2vw, 16px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: clamp(18px, 2vw, 24px);
+    }
+
+    .col2-card {
+        position: relative;
+        top: -35px;
+        left: -10px;
+        width: clamp(100px, 35vw, 500px);
+        padding-left: clamp(20px, 2vw, 144px);
+        padding-top: clamp(20px, 2vw, 40px);
+        padding-right: clamp(10px, 2vw, 50px);
+        padding-bottom: 50px;
+        /* width: 470px;
+    height: 400px; */
+        border-radius: 16px;
+        background: #FAFBFF;
+        box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.15);
+    }
+
+    @media (max-width: 768px) {
+        .tutor-step {
+            font-size: 21px;
+            width: 35px;
+            height: 36px;
+        }
+
+        .tutor-steps {
+            width: 180px;
+            height: 36px;
+        }
+
+        .tutor-btn {
+            height: 35px;
+        }
+
+        .tutor-info {
+            font-size: clamp(14px, 2vw, 16px);
+            line-height: clamp(19px, 2vw, 24px);
+        }
+
+        .circle {
+            width: 15px;
+            height: 15px;
+        }
+    }
+
+
+    @media (max-width: 768px) {
+        .tutor-steps {
+            width: 155px;
+            height: 36px;
+        }
+    }
+
+}

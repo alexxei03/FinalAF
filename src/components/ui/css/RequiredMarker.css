@@ -1,0 +1,12 @@
+.required-marker {
+  color: #ca0000;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 112.4%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

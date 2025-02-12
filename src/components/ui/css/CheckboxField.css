@@ -1,0 +1,23 @@
+.confirm-block {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.confirm-text {
+    color: #000;
+    font-size: 14px;
+}
+
+.confirm-checkbox {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    margin-right: 5px;
+    border: 2px solid #D9D9D9;
+}
+
+.confirm-checkbox:checked {
+    background-color: #2655FF;
+    border: 2px solid #2655FF;
+}

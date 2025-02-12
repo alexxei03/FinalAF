@@ -1,0 +1,30 @@
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    width: 100%;
+    max-width: 350px;
+    justify-content: center;
+  }
+  
+  .search-icon {
+    color: #6c757d;
+    margin-right: 10px;
+  }
+  
+  .search-bar input {
+    flex-grow: 1;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 15px;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  
+  .search-bar input::placeholder {
+    color: #aaa;
+  }
+  

@@ -1,0 +1,266 @@
+:root {
+    --primary: #2c3e50;
+    --secondary: #34495e;
+    --accent: #2980b9;
+    --bg-light: #ecf0f1;
+    --white: #ffffff;
+    --text: #2c3e50;
+    --subtext: #7f8c8d;
+}
+
+/* Общий контейнер страницы */
+.course-info-page-container {
+    margin: 30px;
+    padding: 5px 15px;
+    border-radius: 12px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* Герой-секция */
+.course-info-hero {
+    position: relative;
+    height: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--subtext);
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(44, 62, 80, 0.75);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.course-info-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.course-info-subtitle {
+    font-size: 16px;
+    margin-bottom: 12px;
+    max-width: 600px;
+}
+
+/* Кнопка записи */
+.enroll-btn {
+    background: #06F;
+    color: #FFF;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Информация о курсе */
+.course-info-page {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 25px;
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.course-info-details p {
+    font-size: 16px;
+    margin: 4px 0;
+    color: var(--text);
+
+    display: flex;
+    text-align: center;
+    gap: 5px;
+}
+
+.instructor-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.instructor-info img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.instructor-info h3 {
+    font-size: 16px;
+    margin: 0;
+    color: var(--text);
+}
+
+.instructor-info p {
+    font-size: 16px;
+    color: var(--subtext);
+    margin: 2px 0 0;
+}
+
+/* Прогресс студентов */
+.progress-chart {
+    margin-bottom: 20px;
+    background: var(--white);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* План курса */
+.course-plan {
+    margin-bottom: 20px;
+    background: var(--white);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.course-plan h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--primary);
+}
+
+.week-container {
+    border-bottom: 1px solid #ddd;
+    padding: 6px 0;
+}
+
+.week-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.topics-list {
+    list-style: none;
+    padding-left: 15px;
+    margin-top: 6px;
+}
+
+.topics-list li {
+    font-size: 15px;
+    color: var(--text);
+    margin-bottom: 4px;
+}
+
+/* Отзывы студентов */
+.reviews-section {
+    margin-bottom: 20px;
+    background: var(--white);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.reviews-section h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--primary);
+}
+
+.reviews-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.review-card {
+    background: #f7f9fa;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.review-card h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: var(--text);
+    margin-top: 0px;
+}
+
+.review-card p {
+    font-size: 16px;
+    color: var(--subtext);
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+/* FAQ */
+.faq-section {
+    margin-bottom: 20px;
+    background: var(--white);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.faq-section h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--primary);
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 6px 0;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.faq-answer {
+    font-size: 16px;
+    color: var(--text);
+    margin-top: 6px;
+}
+
+/* Медиа-запросы */
+@media (max-width: 768px) {
+    .course-info-page {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .instructor-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .progress-chart {
+        height: 220px;
+    }
+}

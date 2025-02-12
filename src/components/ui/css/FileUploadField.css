@@ -1,0 +1,33 @@
+.file-upload {
+    width: 280px;
+    border-radius: 22px;
+    border: 2px dashed #8e98ab;
+    background: #FAFBFC;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    padding: 35px 21px;
+}
+
+.file-upload-inner {
+    text-align: center;
+}
+
+.file-upload-text {
+    color: #4C535F;
+    text-align: center;
+    font-family: Nunito Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.file-upload-img {
+    margin-bottom: 15px;
+}
+
+.file-input {
+    display: none;
+}

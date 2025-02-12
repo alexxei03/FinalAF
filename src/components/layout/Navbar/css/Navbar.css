@@ -1,0 +1,105 @@
+.layout {
+    display: flex;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+.no-transition {
+    transition: none !important;
+}
+
+.layout.sidebar-open .navbar {
+    left: 250px;
+    width: calc(100% - 250px);
+}
+
+.layout.sidebar-closed {
+    margin-left: 70px;
+}
+
+.layout.sidebar-open .page-content {
+    left: 250px;
+    width: calc(100% - 250px);
+}
+
+.page-content {
+    left: 70px;
+    width: calc(100%);
+    position: sticky;
+    transition: left 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+
+.main-content {
+    flex: 1;
+    min-height: 100vh;
+    transition: margin-left 0.3s ease-in-out;
+    padding-top: 60px;
+}
+
+.no-transition .main-content,
+.no-transition .navbar,
+.no-transition .page-content {
+    transition: none !important;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 70px;
+    width: calc(100% - 70px);
+    transition: left 0.3s ease-in-out, width 0.3s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    z-index: 100;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-btn svg {
+    color: black
+}
+
+.nav-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        left: 0;
+        width: 100%;
+    }
+
+    .page-content {
+        left: 0px;
+    }
+
+    .layout.sidebar-open .page-content {
+        left: 0px;
+        width: calc(100%);
+    }
+
+    .layout.sidebar-open .navbar {
+        left: 0px;
+        width: calc(100%);
+    }
+}

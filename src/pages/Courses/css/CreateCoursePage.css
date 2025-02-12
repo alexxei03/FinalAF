@@ -1,0 +1,101 @@
+.create-course-container {
+    margin: 30px;
+    padding: 30px 40px;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+    color: #4C535F;
+}
+
+
+.custom-input-db-error {
+    border-color: #F13D3D;
+    background: #FFF0F0;
+}
+
+.create-course-btn {
+    width: 100%;
+    background-color: #2655FF;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.create-course-btn:hover {
+    background-color: #1a4be3;
+}
+
+.success-message {
+    background: #D4EDDA;
+    color: #155724;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.create-course-flex-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.create-course-btn-box {
+    display: inline-grid;
+    align-items: center;
+}
+
+.create-course-btn {
+    background: #06F;
+    color: #FFF;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-right: 25px;
+}
+
+.create-course-h1 {
+    background: none;
+    border: none;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    color: #06F;
+    font-weight: 700;
+    border-bottom: 2px solid #1A75FF;
+    padding: 5px;
+}
+
+.create-course-h1-box {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.custom-select-wrapper {
+    margin-bottom: 15px;
+}

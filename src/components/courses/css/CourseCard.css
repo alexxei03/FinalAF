@@ -1,0 +1,53 @@
+.course-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+}
+
+.course-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+.course-info {
+    margin-top: 10px;
+}
+
+.course-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: start;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.course-mentor {
+    color: gray;
+    text-align: start;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.course-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.course-link {
+    font-family: 'Nunito Sans', sans-serif;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.course-price {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}

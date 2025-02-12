@@ -1,0 +1,15 @@
+.form-checker {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 17px;
+}
+
+.form-checker-text {
+    margin-left: 5px;
+    color: #5A5A5A;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

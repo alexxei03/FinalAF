@@ -1,0 +1,22 @@
+.profile-msg {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 15px 10px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    text-align: center;
+  }
+  
+  .profile-msg-success {
+    color: #ffffff;
+    background-color: #5fa95d;
+    border-color: #5fa95d;
+  }
+  
+  .profile-msg-error {
+    color: #ffffff;
+    background-color: #F13D3D;
+    border-color: #F13D3D;
+  }
+  
