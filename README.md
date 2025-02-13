@@ -51,6 +51,7 @@ cd learning-platform
 ```
 
 ### **2. Запуск Backend (Django)**
+Backend-файлы расположены в отдельном репозитории - https://github.com/alexxei03/Backend-FinalAF
 Установите зависимости и создайте `.env` файл с настройками.  
 ```bash
 cd backend
